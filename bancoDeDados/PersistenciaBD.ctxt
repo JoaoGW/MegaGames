@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=PersistenciaBD
+comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ PersistenciaBD\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
+comment1.params=
+comment1.target=PersistenciaBD()
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ PersistenciaBD\r\n
+comment2.params=usuario
+comment2.target=void\ gravarDadosUsuario(entidades.Usuario)
+comment3.params=jogo
+comment3.target=void\ gravarDadosJogo(entidades.Jogo)
+comment4.params=cnpj
+comment4.target=java.lang.Integer\ obterIdDesenvolvedor(java.lang.String)
+comment5.params=desenvolvedor
+comment5.target=void\ gravarDadosDesenvolvedor(entidades.Desenvolvedor)
+comment6.params=
+comment6.target=void\ mostrarDados()
+comment7.params=
+comment7.target=java.util.List\ obterJogosDB()
+comment8.params=nome
+comment8.target=java.lang.Integer\ obterIdJogo(java.lang.String)
+comment9.params=idDesenvolvedor\ idJogo
+comment9.target=void\ inserirJogoBibliotecaDev(java.lang.Integer,\ java.lang.Integer)
+numComments=10

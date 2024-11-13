@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=BDCadJogos
+comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ BDCadFilmes\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
+comment1.params=nomeDB
+comment1.target=BDCadJogos(java.lang.String)
+comment10.params=
+comment10.target=void\ obterDadosUsuarioDB()
+comment2.params=url\ user\ password
+comment2.target=java.sql.Connection\ conectarDB(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Method\ conectarDB\r\n\r\n\ @param\ url\ -\ string\ de\ conexao\r\n\ @param\ nomeDB\ -\ nome\ do\ banco\ de\ dados\ \r\n\ @param\ user\ -\ usuario\ do\ banco\ de\ dados\r\n\ @param\ password\ -\ senha\ do\ usuario\r\n\ @return\ The\ return\ value\r\n
+comment3.params=nome\ cnpj\ email
+comment3.target=void\ gravarDadosDesenvolvedorDB(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment4.params=cnpj
+comment4.target=java.lang.Integer\ obterIdDesenvolvedorDB(java.lang.String)
+comment5.params=nome\ preco\ avaliacao\ idDesenvolvedor
+comment5.target=void\ gravarDadosJogoDB(java.lang.String,\ float,\ float,\ java.lang.Integer)
+comment6.params=nome\ nickname\ senha\ telefone\ idJogo
+comment6.target=void\ gravarDadosUsuarioDB(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.Integer)
+comment7.params=
+comment7.target=java.util.List\ obterJogosDB()
+comment8.params=nome
+comment8.target=java.lang.Integer\ obterIdJogoDB(java.lang.String)
+comment9.params=idDesenvolvedor\ idJogo
+comment9.target=void\ inserirJogoBibliotecaDevDB(java.lang.Integer,\ java.lang.Integer)
+numComments=11

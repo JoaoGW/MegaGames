@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Pessoa
+comment0.text=\r\n\ @author\ \r\n\ Classe\ para\ representar\ uma\ pessos\r\n
+comment1.params=nome\ telefone
+comment1.target=Pessoa(java.lang.String,\ java.lang.String)
+comment2.params=nome
+comment2.target=Pessoa(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getNome()
+comment3.text=\r\n\ @return\ the\ nome\r\n
+comment4.params=nome
+comment4.target=void\ setNome(java.lang.String)
+comment4.text=\r\n\ @param\ _nome\ the\ nome\ to\ set\r\n
+comment5.params=
+comment5.target=java.lang.String\ getTelefone()
+comment5.text=\r\n\ @return\ the\ idade\r\n
+comment6.params=telefone
+comment6.target=void\ setIdade(java.lang.String)
+comment6.text=\r\n\ @param\ idade\ the\ idade\ to\ set\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ Retorna\ os\ dados\ como\ string\r\n
+numComments=8

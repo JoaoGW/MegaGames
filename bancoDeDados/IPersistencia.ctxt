@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=IPersistencia
+comment0.text=\r\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ interface\ IPersistencia\ aqui.\r\n\ \r\n\ @author\ (seu\ nome\ aqui)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ data\ aqui)\r\n
+comment1.params=usuario
+comment1.target=void\ gravarDadosUsuario(entidades.Usuario)
+comment2.params=jogo
+comment2.target=void\ gravarDadosJogo(entidades.Jogo)
+comment3.params=desenvolvedor
+comment3.target=void\ gravarDadosDesenvolvedor(entidades.Desenvolvedor)
+comment4.params=
+comment4.target=void\ mostrarDados()
+comment5.params=
+comment5.target=java.util.List\ obterJogosDB()
+comment6.params=cnpj
+comment6.target=java.lang.Integer\ obterIdDesenvolvedor(java.lang.String)
+comment7.params=nome
+comment7.target=java.lang.Integer\ obterIdJogo(java.lang.String)
+comment8.params=idDesenvolvedor\ idJogo
+comment8.target=void\ inserirJogoBibliotecaDev(java.lang.Integer,\ java.lang.Integer)
+numComments=9
