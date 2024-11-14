@@ -12,7 +12,6 @@ public class NomePessoa extends Texto{
     // Atributos
     private String nome;
     
-
     // Construtores
     public NomePessoa(String nome){
         super(nome);
@@ -33,7 +32,6 @@ public class NomePessoa extends Texto{
         this.nome = nome;
     }
     
-    
     /**
      * Retorna nome invertido
      * @return sInv nome invertido
@@ -47,7 +45,6 @@ public class NomePessoa extends Texto{
      * @return sBib nome bibliografico
      */
     public String getNomeBiblio(){
-        
         // Separa as palavras
         String vts[] = getNome().split(" ");
         int qtd = vts.length;
@@ -81,4 +78,3 @@ public class NomePessoa extends Texto{
     }
 
 }
-

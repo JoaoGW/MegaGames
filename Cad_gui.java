@@ -16,8 +16,8 @@ public class Cad_gui extends JFrame implements ActionListener {
 
     // componentes para dados do cliente
     private JLabel lblNomeUsuario, lblNicknameUsuario, lblSenhaUsuario, lblTelefoneUsuario, lblJogoUsuario,
-            lblNomeDesenv, lblCnpjDesenv, lblEmailDesenv,
-            lblNomeJogo, lblPrecoJogo, lblAvaliacaoJogo;
+            lblNomeDesenv, lblCnpjDesenv, lblEmailDesenv, lblNomeJogo,
+            lblPrecoJogo, lblAvaliacaoJogo, lblCbSituacaoJogo;
             
     private JTextField txfNomeUsuario, txfNicknameUsuario, txfSenhaUsuario, txfTelefoneUsuario,
             txfNomeDesenv, txfCnpjDesenv, txfEmailDesenv,
@@ -26,11 +26,10 @@ public class Cad_gui extends JFrame implements ActionListener {
     private JButton btnInserirJogo, btnInserirUsuario, btnNovo,
             // Botoes para saber o que cadastrar
             btnCadastrarJogo, btnCadastrarUsuario;
-            
-    private JComboBox<String> cbJogos;
     
-    /*String qtde[] = {"0","1","2","3","4","5","6","7"};
-        cbQtdDisc = new JComboBox(qtde);//Abre lista de zero a um*/
+    private JComboBox<String> cbJogos, cbSituacaoJogo;
+
+    String[] situacaoJogo = {"Wishlist", "Concluído"};
         
     // Paineis
     private JPanel pnMenuCadastro, pnCadastroJogo, pnCadastroUsuario; 
@@ -43,7 +42,6 @@ public class Cad_gui extends JFrame implements ActionListener {
      *
      */
     public Cad_gui(String titulo) {
-
         super(titulo);
         setSize(320, 84);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -65,7 +63,7 @@ public class Cad_gui extends JFrame implements ActionListener {
 
         // Paine de cadastro de usuario
         pnCadastroUsuario = new JPanel();
-        pnCadastroUsuario.setLayout(new GridLayout(5, 2, 0, 3));
+        pnCadastroUsuario.setLayout(new GridLayout(6, 2, 0, 3));
 
         // Labels Usuario
         lblNomeUsuario = new JLabel("Nome ", JLabel.RIGHT);
@@ -73,6 +71,7 @@ public class Cad_gui extends JFrame implements ActionListener {
         lblSenhaUsuario = new JLabel("Senha ", JLabel.RIGHT);
         lblTelefoneUsuario = new JLabel("Telefone ", JLabel.RIGHT);
         lblJogoUsuario = new JLabel("Jogo ", JLabel.RIGHT);
+        lblCbSituacaoJogo = new JLabel("Situação ", JLabel.RIGHT);
         
         // Painel de cadastro de jogos
         pnCadastroJogo = new JPanel();
@@ -96,7 +95,7 @@ public class Cad_gui extends JFrame implements ActionListener {
         
         //Combobox Usuario
         cbJogos = new JComboBox<>();
-        
+        cbSituacaoJogo = new JComboBox<>(situacaoJogo);
         
         // TextFields Desenvolvedores
         txfNomeDesenv = new JTextField(10);
@@ -145,6 +144,8 @@ public class Cad_gui extends JFrame implements ActionListener {
         
         pnCadastroUsuario.add(lblJogoUsuario);
         pnCadastroUsuario.add(cbJogos);
+        pnCadastroUsuario.add(lblCbSituacaoJogo);
+        pnCadastroUsuario.add(cbSituacaoJogo);
         
         // Adiciona os componentes do cadastro de jogo
         pnCadastroJogo.add(lblNomeDesenv);
@@ -285,7 +286,7 @@ public class Cad_gui extends JFrame implements ActionListener {
             
         } else if(e.getSource() == btnCadastrarJogo || e.getSource() == btnCadastrarUsuario){
             btnNovo.setVisible(true);
-            setSize(320, 310);
+            setSize(320, 350);
             // Insere os jogos ja cadastrados na comboBox
             carregarNomeJogosDB();
             

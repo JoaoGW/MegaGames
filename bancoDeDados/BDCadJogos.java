@@ -20,7 +20,7 @@ public class BDCadJogos{
 
     BDCadJogos(String nomeDB) throws Exception{
         String url = this.strConexao + nomeDB;
-        this.con = conectarDB(url, "root", "root");
+        this.con = conectarDB(url, "root", "GFCqy19F5JPTmf!");
         this.st = con.createStatement();
     }
 
@@ -124,7 +124,6 @@ public class BDCadJogos{
         }
     }
 
-    
     public void obterDadosUsuarioDB() throws Exception { //Listar em uma tabela
         /*List<String> dados = new ArrayList<>();
         
@@ -138,5 +137,14 @@ public class BDCadJogos{
         }catch(Exception e) {
             throw new Exception(e.getMessage());
         }          */
+    }
+
+    public void gravarDadosWishlistDB(Integer idJogo, Integer idUsuario, String situacao) throws Exception {
+        try {
+            String SQL = ("INSERT INTO usuarios (idJogo, idUsuario, situacao) " + "VALUES (" + idJogo + ", " + idUsuario + ", '" + situacao + "')");
+            st.execute(SQL);
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
     }
 }
